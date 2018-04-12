@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="junit5-master">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/documentation/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-jupiter-api/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-jupiter-engine/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-jupiter-engine/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-jupiter-migrationsupport/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-jupiter-migrationsupport/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-jupiter-params/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-jupiter-params/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-commons-java-9/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-commons-java-9/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-commons/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-console-standalone/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-console/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-engine/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-engine/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-launcher/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-runner/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-suite-api/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-surefire-provider/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-platform-surefire-provider/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-vintage-engine/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/junit-vintage-engine/src/test/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/platform-tests/src/jmh/java" />
+      <root url="jar://$USER_HOME$/Downloads/junit5-master.zip!/junit5-master/platform-tests/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

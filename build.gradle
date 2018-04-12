@@ -1,0 +1,58 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath ("org.junit.platform:junit-platform-gradle-plugin:1.0.0")
+  }
+}
+
+apply plugin: 'org.junit.platform.gradle.plugin'
+apply plugin: 'java'
+apply plugin: 'jacoco'
+                      
+sourceCompatibility = 1.8
+
+dependencies {       
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.0.3'
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.0.3'
+}
+
+repositories {
+  mavenCentral()
+}                
+
+compileJava {
+  options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+compileTestJava {
+  options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+sourceSets.main.java.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['test']
+
+project.afterEvaluate {
+    def junitPlatformTestTask = project.tasks.getByName('junitPlatformTest')
+
+    jacoco {
+        toolVersion = "0.7.9"
+        applyTo junitPlatformTestTask
+    }
+
+    project.task(type: JacocoReport, "junitPlatformJacocoReport",
+      {
+        sourceDirectories = files("./src")
+        classDirectories = fileTree(dir: './build/classes/java/main/game',
+		      excludes: ['**/ui/*.class'])
+        executionData junitPlatformTestTask
+      })
+}
+
+task(runui, dependsOn: 'classes', type: JavaExec) {
+  main = 'game.ui.MasterMindUI'
+  classpath = sourceSets.main.runtimeClasspath
+}                                                         
+
+defaultTasks 'clean', 'test', 'junitPlatformJacocoReport'
